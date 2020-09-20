@@ -1,0 +1,11 @@
+(a): A total of 8 commits have been made.  3 were mine and 5 were from the forked repository.
+
+(b): .gitignore was added on 1/24/2017.
+
+(c): git log displays the commit history of a repository.  git status shows changes that need to be commited, untracked files, and the status of the local repository compared to the remote branch.
+
+(d): Untracked files are files that are not checked for changes when making commits.  Unstaged files are files that changes have been made in but will not be included in the next commit.
+
+(e): The git checkout command is used to change the branch of the repository that you are currently working on.  It will not make any changes to the branch you are currently working on.  In contrast, the git reset command is used to change the HEAD pointer that points to the "last commit" to point to one besides the most recent commit.  Depending on the options it is invoked with, it can also change the staging area to reflect the state it was at after that commit (--mixed) and change the working directory's files to reflect that commit (--hard).
+
+(f): It depends on the exact changes that have been made locally.  If the uncommited changes are creating new files that do not exist on the remote branch or there is no overlap between the changes then the pull will succeed.  Otherwise git will prompt you to commit or stash your changes, after which you will be able to pull and merge the changes as appropriate.
