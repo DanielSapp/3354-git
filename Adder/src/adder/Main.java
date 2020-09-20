@@ -6,9 +6,11 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide integers to add");
-        }
+        } catch (InvalidInputException  e) {
+            System.err.println("Please provide 1 or more arguments.  Usage: ./Main [-] numOne [numTwo [...]]");
+        } catch (InputMismatchException e) {
+	    System.err.println("Invalid input.  Only pass in integers or a minus as the first argument.  Usage: ./Main [-] numOne [numTwo [...]]");
+	}
     }
 
     private static int addArguments(String[] args) {
