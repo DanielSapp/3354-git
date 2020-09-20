@@ -12,6 +12,9 @@ public class Main {
     }
 
     private static int addArguments(String[] args) {
+	if (args.length == 0) {
+	    throw new InputMismatchException();
+	}
         int sum = 0;
         for (String s : args) {
             sum += Integer.valueOf(s);
